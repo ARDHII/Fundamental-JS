@@ -46,3 +46,22 @@ const number = getSpecialNumber()
 console.log(number)
 console.log(number + 20)
 console.log(Math.pow(number, 2))
+
+
+// cara 1
+function print(){
+  console.log('You have been here for 3 seconds')
+}
+
+setTimeout (print, 3000)
+
+
+
+const interval = setInterval(function(){
+  console.log('1 second have passed')
+}, 1000)
+
+function stop(){
+  clearInterval(interval)
+}
+setTimeout(stop, 3100)
